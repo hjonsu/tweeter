@@ -1,0 +1,40 @@
+.new-tweet {
+  width: 750px;
+}
+
+#tweet-text {
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid black;
+  background-color: inherit;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 600;
+  height: 40px;
+}
+
+#tweet-text:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  font-weight: 600;
+}
+
+
+.footer {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-between;
+  margin-right: 0.5em;
+  font-family: 'Bungee', cursive;
+}
+
+#tweetBtn {
+  color: #FFFFFF;
+  background-color: #4056A1;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  box-shadow: 3px 4px 5px #6a83b9;
+
+}

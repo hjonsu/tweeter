@@ -23,9 +23,20 @@ body {
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
 
+
 }
 
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f1ec;
+  margin-top: 5em;
+}
