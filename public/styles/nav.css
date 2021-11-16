@@ -1,3 +1,30 @@
 nav {
+  color: #FFFFFF;
+  background-color: #4056A1;
+  height: 120px;
+  width: 100vw;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav span {
   font-family: 'Bungee', cursive;
+  font-size: 24px;
+}
+
+.new-tweet-button {
+  /* float: right; */
+  margin: 0;
+}
+
+#navArrow {
+  float: right;
+  position: relative;
+  left: -50%;
+  padding-top: 0.5em;
+  color: #EA0000;
 }
