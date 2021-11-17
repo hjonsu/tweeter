@@ -23,11 +23,13 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/headers.css" type="text/css" />
   <link rel="stylesheet" href="/styles/newTweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 </head>
 
 <body>
@@ -43,16 +45,19 @@
   <!-- avatar and profile picture -->
   <header>
     <div>
-      <img src="/images/profile-hex.png">
+      <img src="/images/123.png">
     </div>
     <br>
     <div>
-      <h2>Jono Su</h2>
+      <h2>Jett</h2>
+    </div>
+    <div>
+      <h5>@watchthis</h5>
     </div>
   </header>
 
   <!-- Page-specific (main) content here -->
-  <main class="container">
+  <main class="container" id="main-container">
     <section class="new-tweet">
       <form method="POST" action="/tweets">
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
@@ -61,6 +66,9 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+    </section>
+    <section class="tweet-container">
+
     </section>
   </main>
 </body>
