@@ -10,7 +10,10 @@
   border: 2px solid black;
   width: 700px;
   height: 200px;
-  justify-content: center;
+
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tweet-header {
@@ -18,9 +21,10 @@
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  width: 90%;
-  margin-top: 30px;
+  width: 95%;
+  margin-top: 1em;
   font-size: 1em;
+  margin-left: 1em;
 
   background-color: inherit;
 }
@@ -31,4 +35,24 @@
   align-items: center;
   font-size: 1.5em;
   width: 180px;
+}
+
+.tweet-text {
+  display: flex;
+  margin-left: 1.7em;
+  font-weight: 600;
+}
+
+hr {
+  display: flex;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  background-color: black;
+  color: black;
+  width: 92%;
+}
+
+.tweet-footer {
+  display: flex;
 }
