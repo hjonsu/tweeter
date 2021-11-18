@@ -30,6 +30,9 @@
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -37,13 +40,13 @@
   <nav>
     <span>tweeter</span>
     <div class="new-tweet-button">
-      <strong>write</strong> a new tweet
+      <strong>Write</strong> a new tweet
       <br>
       <i class="fas fa-angle-double-down" id="navArrow"></i>
     </div>
   </nav>
   <!-- avatar and profile picture -->
-  <header>
+  <header id="hero">
     <div>
       <img src="/images/123.png">
     </div>
@@ -59,7 +62,7 @@
   <!-- Page-specific (main) content here -->
   <main class="container" id="main-container">
     <section class="new-tweet">
-      <form method="POST" action="/tweets">
+      <form method="POST" action="/tweets" id="tweet-form">
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         <div class="footer">
           <button type="submit" id="tweetBtn">Tweet</button>
@@ -67,33 +70,7 @@
         </div>
       </form>
     </section>
-    <section class="tweet-container">
-      <article class="tweet">
-        <header class="tweet-header">
-          <div class="namePicCombo">
-            <i class="fas fa-address-book"></i>
-            <h6 class="userName">
-              Thomas Jefferson
-            </h6>
-          </div>
-          @Tjayjay
-        </header>
-        <p class="tweet-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eaque at facere iure natus, tenetur ea sequi
-          corporis nulla deleniti ullam, consequuntur voluptate. Nostrum totam ut, aliquam ab soluta rerum?
-        </p>
-        <hr />
-        <footer class="tweet-footer">
-          <p class="tweet-time">
-            10 days ago
-          </p>
-          <div class="footer-icons">
-            <i class="far fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="far fa-heart"></i>
-          </div>
-        </footer>
-      </article>
+    <section class="tweet-container" id="all-tweets">
     </section>
   </main>
 </body>

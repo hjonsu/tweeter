@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-  console.log("from inside composer char");
   $('#tweet-text').keyup(function () {
     const textLength = $(this).val().length;
     const charCount = 140 - textLength;
