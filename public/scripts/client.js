@@ -23,7 +23,7 @@ $(document).ready(function () {
       </div>
     </header>
     <p class="tweet-text">
-      ${tweet.content.text}
+      ${escape(tweet.content.text)}
     </p>
     <hr />
     <footer class="tweet-footer">
@@ -52,31 +52,6 @@ $(document).ready(function () {
     }
   };
 
-  // event listener for submit
-  $("#tweet-form").on('submit', function (event) {
-    event.preventDefault();
-    let data = $("#tweet-form").serialize();
-    let myTweet = $("#tweet-text").val();
-
-
-
-    if (myTweet.length > 140) {
-      alert("Your tweet is too long!");
-      return;
-    } else if (myTweet.length === 0) {
-      alert("Oops, its empty!");
-      return;
-    }
-
-    $.ajax({
-      method: 'POST',
-      data,
-      url: '/tweets',
-      success: function (response) {
-        console.log(response);
-      }
-    });
-  });
 
   const loadTweets = function () {
     $.ajax({
@@ -90,5 +65,44 @@ $(document).ready(function () {
 
     });
   };
+
+
+  // event listener for submit
+  $("#tweet-form").on('submit', function (event) {
+    event.preventDefault();
+    let data = $("#tweet-text").serialize();
+
+    console.log(data);
+
+    let myTweet = $("#tweet-text").val();
+
+    if (myTweet.length > 140) {
+
+      $(".error").text("Your tweet is too long!").slideDown();
+      return;
+    } else if (myTweet.length === 0) {
+      $(".error").text("Oops, its empty!").slideDown();
+      return;
+    }
+    $(".error").slideUp();
+
+    $.ajax({
+      method: 'POST',
+      data,
+      url: '/tweets',
+      success: function () {
+        loadTweets();
+      }
+    });
+
+  });
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
+
   loadTweets();
 });

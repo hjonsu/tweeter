@@ -41,3 +41,9 @@
 #tweetBtn:hover {
   background-color: #7e7ecc;
 }
+
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  font-size: 1.4em;
+}
