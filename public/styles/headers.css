@@ -5,11 +5,38 @@ The background-color should be a different colour than the nav and the body */
 
 #hero {
   display: flex;
-  padding-top: calc(100px + 3em);
+  padding-top: calc(100px + 1em);
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #00b0c7;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.profileImg {
+  height: 12em;
+  width: 9em;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profileName {
+  padding-top: .5em;
+  font-family: 'Bungee', cursive;
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+
+}
+
+.profileHandle {
+  color: white;
+  font-weight: 600;
+  margin-top: 0;
 }

@@ -43,7 +43,9 @@
 }
 
 .error {
-  color: #D8000C;
-  background-color: #FFBABA;
+  color: #ff0000;
+  font-family: 'Bungee', cursive;
   font-size: 1.4em;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
 }
