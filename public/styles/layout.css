@@ -27,10 +27,6 @@ body {
 }
 
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
 .container {
   display: flex;
   justify-content: center;
@@ -39,4 +35,46 @@ body {
   align-items: center;
   background-color: #f4f1ec;
   margin-top: 5em;
+}
+
+/* Responsive layout CSS */
+
+@media only screen and (max-width: 1023px) {
+
+  body nav {
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-color: #00b0c7;
+  }
+
+
+  #hero {
+    padding: 0em 0em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container {
+    display: flex;
+    margin: 10em 6em;
+    flex-grow: 2;
+
+  }
+
+  .profile {
+    width: 50%;
+  }
+
+  #hero {
+    flex: 50%;
+    height: 20em;
+    padding-bottom: 6em;
+    margin-top: calc(100px + 4em);
+    margin-left: 5em;
+  }
 }

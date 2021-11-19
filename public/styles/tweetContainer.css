@@ -9,7 +9,7 @@
   display: flex;
   margin-top: 2em;
   border: 2px solid black;
-  width: 700px;
+  width: 100%;
   box-shadow: 0 0 0 transparent;
   align-items: flex-start;
   flex-direction: column;
@@ -85,4 +85,12 @@ hr {
 
 .tweet-container>article:hover {
   box-shadow: 3px 4px 5px grey;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .tweet-container {
+    padding: 0 2em;
+
+  }
 }

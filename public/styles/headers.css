@@ -6,7 +6,7 @@ The background-color should be a different colour than the nav and the body */
 #hero {
   display: flex;
   padding-top: calc(100px + 1em);
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   flex-direction: column;

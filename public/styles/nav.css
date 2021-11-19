@@ -1,11 +1,11 @@
 nav {
   color: #FFFFFF;
   background-color: #4056A1;
-  height: 100px;
   width: 100%;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 3em;
+  padding-bottom: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
