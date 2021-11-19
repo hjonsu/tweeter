@@ -48,7 +48,7 @@
   font-weight: 600;
 }
 
-hr {
+.tweet-line {
   display: flex;
   justify-content: center;
   border-width: 1px;

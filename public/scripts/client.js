@@ -25,7 +25,7 @@ $(document).ready(function () {
     <p class="tweet-text">
       ${escape(tweet.content.text)}
     </p>
-    <hr />
+    <hr class="tweet-line"/>
     <footer class="tweet-footer">
       <p class="tweet-time">
         ${timeago.format(tweet.created_at)}
@@ -61,10 +61,12 @@ $(document).ready(function () {
       dataType: "json",
       success: function (data) {
         renderTweets(data);
+
       }
 
     });
   };
+
 
 
   // event listener for submit
@@ -92,6 +94,8 @@ $(document).ready(function () {
       url: '/tweets',
       success: function () {
         loadTweets();
+        $('#tweet-text').val('');
+        $('.counter').text(140);
       }
     });
 
@@ -102,7 +106,6 @@ $(document).ready(function () {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
 
   loadTweets();
 });
