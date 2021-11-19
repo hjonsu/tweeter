@@ -11,11 +11,11 @@ Tweeter is a single-page Twitter clone, built with HTML, CSS, JQuery, Javascript
 5. Tweet away!
 
 ## Final Product
-!["Screenshot of Tweeter"](https://github.com/hjonsu/tweeter/blob/master/docs/desktop-base.png?raw=true)
-!["Screenshot of hover effect"](https://github.com/hjonsu/tweeter/blob/master/docs/tweet-hover.png?raw=true)
-!["Screenshot of a tweet that's too long"](https://github.com/hjonsu/tweeter/blob/master/docs/too-long.png?raw=true)
-!["Screenshot of a tweet that's too short"](https://github.com/hjonsu/tweeter/blob/master/docs/too-short.png?raw=true)
-!["Screenshot of Tweeter on tablet size"](https://github.com/hjonsu/tweeter/blob/master/docs/tablet-size.png?raw=true)
+!["Screenshot of Tweeter"](https://github.com/hjonsu/tweeter/blob/master/public/images/resonsiveDesktop.png?raw=true)
+!["Screenshot of hover effect"](https://github.com/hjonsu/tweeter/blob/master/public/images/BoxShadowShowcase.jpg?raw=true)
+!["Screenshot of a tweet that's too long"](https://github.com/hjonsu/tweeter/blob/master/public/images/yourTweetIsTooLong.png?raw=true)
+!["Screenshot of a tweet that's too short"](https://github.com/hjonsu/tweeter/blob/master/public/images/EmptyTweet.png?raw=true)
+!["Screenshot of Tweeter on tablet size"](https://github.com/hjonsu/tweeter/blob/master/public/images/responsiveShowcase.png?raw=true)
 
 ## Dependencies
 
@@ -23,3 +23,4 @@ Tweeter is a single-page Twitter clone, built with HTML, CSS, JQuery, Javascript
 - Node 10.x.x or above
 - Body parser
 - Chance
+
